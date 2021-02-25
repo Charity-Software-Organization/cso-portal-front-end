@@ -4,7 +4,10 @@
     <Nuxt />
     <Footer />
   </div>
+   
 </template>
+
+
 
 <style>
 html {

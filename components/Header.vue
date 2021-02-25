@@ -21,9 +21,9 @@
 
                                 <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                                     <ul class="navbar-nav m-auto">
-                                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                                        <li class="nav-item"><NuxtLink class="nav-link" to="/">Home</NuxtLink></li>
+                                        <li class="nav-item"><NuxtLink class="nav-link" to="/about">About</NuxtLink></li>
+                                        <li class="nav-item"><NuxtLink class="nav-link" to="/contact">Contact</NuxtLink></li>
                                     </ul>
 
                                 </div>
@@ -40,13 +40,6 @@
         </div>
     </div>
 
-  <!-- <div id="nav">
-    <NuxtLink to="/">Home</NuxtLink>
-    <span>|</span>
-    <NuxtLink to="/about">About</NuxtLink>
-    <span>|</span>
-    <NuxtLink to="/contact">Contact</NuxtLink>
-  </div> -->
 </template>
 
 <style>
