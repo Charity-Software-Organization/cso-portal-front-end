@@ -24,19 +24,19 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 
 ## 主入口
+pages/index.vue 和 layouts/default.vue
 
-文件夹说明
-
-- public
-    - favicon.ico 网站的标签页徽标
-    - index.html 主入口
-- src
-    - assets 资源文件
-    - compoents 可重用的组件
-    - pages 以页为组织形式的组件，通常依赖与可重用的组件
-    - router 路由
-    - App.vue 主入口，由main.js唤醒
-    - main.js 主入口，由index.html唤醒
+## 文件夹说明
+- assets 资源文件
+- compoents 可重用的组件
+- content 内容，一般为md
+- layouts 页面布局中的可重用文件，如header
+- middleware 中间件，未使用
+- pages 以页为组织形式的组件，通常依赖与可重用的组件
+- plugins 插件，集成了element
+- static 静态文件，保存了一些图标
+- store 未使用
+- nuxt.config.js 配置文件
 
 ## 依赖项
 
