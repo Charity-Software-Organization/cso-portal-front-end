@@ -34,6 +34,7 @@
             :key="item.title"
             :cardActiveIndex="cardActiveIndex"
             :currentIndex="index"
+            :cardItem="item"
             @mouseover.native="handleChangeActiveCardIndex(index)"
           ></card>
         </div>
