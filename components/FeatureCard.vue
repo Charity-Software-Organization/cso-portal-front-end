@@ -2,7 +2,7 @@
   <el-col :span="8" :md="8" :sm="12" :xs="24">
     <div class="single-feature-item">
       <div class="feature-icon">
-        <i :class="cardItem.iconClass"></i>
+        <i :class="cardItem.iconClass" />
       </div>
       <h5>{{ cardItem.title }}</h5>
       <p>{{ cardItem.desc }}</p>
@@ -12,18 +12,18 @@
 
 <script>
 export default {
-  name: "FeatureCard",
+  name: 'FeatureCard',
   props: {
     cardItem: {
       type: Object,
       default: () => ({
-        iconClass: "flaticon-donation-1",
-        title: "Our Mission",
-        desc: "Poor people live in unsafe place consectetur adipisicing",
-      }),
-    },
-  },
-};
+        iconClass: 'flaticon-donation-1',
+        title: 'Our Mission',
+        desc: 'Poor people live in unsafe place consectetur adipisicing'
+      })
+    }
+  }
+}
 </script>
 
 <style scoped>
