@@ -1,3 +1,10 @@
+<!--
+ * @Description:
+ * @Author: huxianc
+ * @Date: 2021-02-25 21:06:29
+ * @LastEditors: huxianc
+ * @LastEditTime: 2021-02-25 22:12:12
+-->
 <template>
   <el-col :span="8" :md="8" :sm="12" :xs="24">
     <div class="single-feature-item">
@@ -26,36 +33,34 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .single-feature-item {
   text-align: center;
   padding: 25px;
   height: 300px;
   position: relative;
   z-index: 1;
-}
-.single-feature-item h5 {
-  font-size: 24px;
-  font-weight: 600;
-  margin: 20px 0;
-}
-
-.single-feature-item i {
-  position: relative;
-}
-
-.single-feature-item i:after {
-  position: absolute;
-  content: "";
-  top: -2px;
-  left: -35px;
-  width: 70px;
-  height: 70px;
-  background: #ffd857;
-  border-radius: 50%;
-  z-index: -1;
-  opacity: 0.9;
-  transition: 0.3s;
+  h5 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 20px 0;
+  }
+  i {
+    position: relative;
+    &:after {
+      position: absolute;
+      content: "";
+      top: -2px;
+      left: -35px;
+      width: 70px;
+      height: 70px;
+      background: #ffd857;
+      border-radius: 50%;
+      z-index: -1;
+      opacity: 0.9;
+      transition: 0.3s;
+    }
+  }
 }
 
 .feature-icon i:before {

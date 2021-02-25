@@ -3,7 +3,7 @@
  * @Author: huxianc
  * @Date: 2021-02-25 21:06:29
  * @LastEditors: huxianc
- * @LastEditTime: 2021-02-25 21:59:06
+ * @LastEditTime: 2021-02-25 22:05:34
 -->
 <template>
   <div class="container">
@@ -56,34 +56,34 @@ export default {
 .about-left {
   margin-right: 60px;
   position: relative;
-}
+  &:before,
+  &:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
 
-.about-left img {
-  border-radius: 10px;
-}
+  &:before {
+    bottom: -20px;
+    right: 20px;
+    background: #ffd857;
+    z-index: -1;
+  }
 
-.about-left:before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  bottom: -20px;
-  right: 20px;
-  background: #ffd857;
-  z-index: -1;
-  border-radius: 10px;
-}
+  &:after {
+    position: absolute;
 
-.about-left::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: #00b965;
-  opacity: 0.3;
-  border-radius: 10px;
+    top: 0;
+    left: 0;
+    background: #00b965;
+    opacity: 0.3;
+  }
+
+  img {
+    border-radius: 10px;
+  }
 }
 
 .about-content {

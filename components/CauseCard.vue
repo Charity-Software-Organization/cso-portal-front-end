@@ -55,36 +55,37 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .each-case-2 {
   border-radius: 6px;
   padding: 20px;
   margin-top: 20px;
   margin-bottom: 40px;
   transition: all 0.3s ease-in-out;
+  &:hover {
+    box-shadow: 0 3px 16px -2px #d0cece;
+  }
 }
-.each-case-2:hover {
-  box-shadow: 0 3px 16px -2px #d0cece;
-}
+
 .case-2-img img {
   border-radius: 5px;
 }
 
-.case-2-texts h3 {
-  font-size: 24px;
-  margin: 18px 0;
-}
-
-.case-2-texts p {
-  margin-bottom: 5px;
-}
-
-.case-2-texts .btn {
-  background: #00b965;
-  color: #fff;
-  padding: 11px 27px;
-  margin: 25px 0;
-  letter-spacing: 1px;
+.case-2-texts {
+  h3 {
+    font-size: 24px;
+    margin: 18px 0;
+  }
+  p {
+    margin-bottom: 5px;
+  }
+  .btn {
+    background: #00b965;
+    color: #fff;
+    padding: 11px 27px;
+    margin: 25px 0;
+    letter-spacing: 1px;
+  }
 }
 
 span.case-2-tag {
