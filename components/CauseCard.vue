@@ -1,10 +1,10 @@
 <template>
-  <div class="col-lg-4 col-md-6">
+  <el-col :span="8" :md="8" :sm="12" :xs="24">
     <div class="each-case-2">
       <div class="case-2-img">
         <a href=""><img :src="cardItem.imageSrc" alt="" /></a>
       </div>
-      <div class="case-2-bar bg-yellow">
+      <div class="case-2-bar">
         <p class="goal-raised mb-0">
           Goal: <span>${{ cardItem.goal }}</span> | Raised:
           <span
@@ -16,7 +16,7 @@
             <el-progress
               :text-inside="true"
               :stroke-width="20"
-              :percentage="cardItem.raised / cardItem.goal * 100"
+              :percentage="(cardItem.raised / cardItem.goal) * 100"
               color="#FFD857"
             ></el-progress>
           </div>
@@ -32,7 +32,7 @@
         <a href="" class="btn btn-green btn-md">Donate</a>
       </div>
     </div>
-  </div>
+  </el-col>
 </template>
 
 <script>
@@ -55,4 +55,51 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.each-case-2 {
+  border-radius: 6px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  transition: all 0.3s ease-in-out;
+}
+.each-case-2:hover {
+  box-shadow: 0 3px 16px -2px #d0cece;
+}
+.case-2-img img {
+  border-radius: 5px;
+}
+
+.case-2-texts h3 {
+  font-size: 24px;
+  margin: 18px 0;
+}
+
+.case-2-texts p {
+  margin-bottom: 5px;
+}
+
+.case-2-texts .btn {
+  background: #00b965;
+  color: #fff;
+  padding: 11px 27px;
+  margin: 25px 0;
+  letter-spacing: 1px;
+}
+
+span.case-2-tag {
+  border: 2px solid #ddd;
+  display: inline-block;
+  padding: 7px;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin: 20px 0;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.progress-bar-area {
+  margin-top: 10px;
+}
+</style>
