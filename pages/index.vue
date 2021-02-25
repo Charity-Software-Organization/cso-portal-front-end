@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h1>Hello Home!</h1>
     <!-- About Area-->
     <div class="about-area section-padding">
       <big-card v-for="item in bigCardList" :key="item.desc" />
