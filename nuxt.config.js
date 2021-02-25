@@ -15,17 +15,17 @@ export default {
     ],
     script: [
       {src: "js/jquery.slim.min.js"},
-      {src: "js/popper.min.js"},
-      {src: "js/wow.min.js"},
+      {src: "js/jquery.sticky.js"},
+      {src: "js/jquery.barfiller.js"},
       {src: "js/jquery.waypoints.min.js"},
       {src: "js/jquery.counterup.min.js"},
+      {src: "js/popper.min.js"},
+      {src: "js/wow.min.js"},
       {src: "js/owl.carousel.min.js"},
       {src: "js/isotope-3.0.6-min.js"},
       {src: "js/magnific-popup.min.js"},
-      {src: "js/jquery.sticky.js"},
-      {src: "js/jquery.barfiller.js"},
-      {src: "js/main.js"},
       {src: "js/bootstrap.min.js"},
+      {src: "js/main.js"},
     ]
   },
 

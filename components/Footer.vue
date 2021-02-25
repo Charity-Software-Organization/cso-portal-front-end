@@ -55,7 +55,7 @@
             <div class="footer-bottom">
                 <div class="row justify-content-center align-items-center">
                     <div class="col-lg-6 col-md-6 col-sm-12">
-                        <p class="copyright-line">Copyright &copy; 2020.Company name All rights reserved.</p>
+                        <p class="copyright-line">Copyright &copy; 2021. CSO All rights reserved.</p>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12">
                         <p class="privacy"></p>
@@ -66,8 +66,9 @@
     </footer>
 
     <!-- Scroll Top Area -->
-
-    <a href="#top" class="go-top" style="display: block;"><i class="fa fa-angle-up"></i></a>
+    <el-backtop>
+       <a href="#top" class="go-top" style="display: block;"><i class="fa fa-angle-up"></i></a>
+    </el-backtop>
   <!-- <div id="nav">
     <h1>Footer</h1>
     <NuxtLink to="/">Home</NuxtLink>
@@ -79,25 +80,66 @@
   </div>
 </template>
 
+<script>
+export default {
+  name: 'Footer'
+}
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+
+
+/* Scrolltop section */
+.go-top {
+    background-color: #EFC94C;
+    color: #FFF;
+    width: 40px;
+    height: 40px;
+    border-radius: 0;
+    /* bottom: 4em;
+    right: 2em; */
+    font-size: 20px;
+    line-height: 43px;
+    text-align: center;
+    text-decoration: none;
+    display: none;
+    position: fixed;
+    -webkit-transition: .3s;
+    transition: .3s;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
-#nav {
-  padding: 30px;
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .go-top {
+        width: 25px;
+        height: 25px;
+        /* bottom: 5em;
+        right: 2em; */
+        font-size: 15px;
+        line-height: 26px;
+    }
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+@media (max-width: 575px) {
+    .go-top {
+        width: 25px;
+        height: 25px;
+        /* bottom: 5em;
+        right: 2em; */
+        font-size: 15px;
+        line-height: 26px;
+    }
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+.go-top i {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    color: #fff;
+}
+
+.go-top:hover {
+    background-color: #e09e27;
+    color: #fff;
 }
 </style>
