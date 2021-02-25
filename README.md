@@ -1,10 +1,12 @@
 # cso-portal-front-end
 
-## Build Setup
-
-he org website used by VUE.
+cso org website used by VUE.
 
 该项目是CSO门户的前端部分，主要使用VUE进行开发。
+
+## 参考文档
+
+[Nuxt.js docs](https://nuxtjs.org).
 
 ## 命令行工具
 
