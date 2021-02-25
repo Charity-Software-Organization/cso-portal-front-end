@@ -1,26 +1,28 @@
 <template>
   <div class="container">
-    <div class="row">
-      <div class="col-lg-6">
+    <el-row>
+      <el-col :span="12">
         <div class="about-left">
           <img class="lazy-image loaded" :src="cardItem.imageSrc" alt="" />
         </div>
-      </div>
-      <div class="col-lg-6">
+      </el-col>
+      <el-col :span="12">
         <div class="about-content">
           <div class="section-title">
             <h6>{{ cardItem.tips }}</h6>
-            <h2>{{cardItem.title}} <b>{{ cardItem.b }}</b></h2>
+            <h2>
+              {{ cardItem.title }} <b>{{ cardItem.b }}</b>
+            </h2>
           </div>
 
           <p>
-            {{cardItem.desc}}
+            {{ cardItem.desc }}
           </p>
 
           <a href="#" class="main-btn">Discover More</a>
         </div>
-      </div>
-    </div>
+      </el-col>
+    </el-row>
   </div>
 </template>
 
@@ -42,3 +44,44 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.about-left {
+  margin-right: 60px;
+  position: relative;
+}
+
+.about-left img {
+  border-radius: 10px;
+}
+
+.about-left:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  bottom: -20px;
+  right: 20px;
+  background: #ffd857;
+  z-index: -1;
+  border-radius: 10px;
+}
+
+.about-left::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #00b965;
+  opacity: 0.3;
+  border-radius: 10px;
+}
+
+.about-content {
+  margin-top: 30px;
+  -webkit-transition: transition all 300ms ease;
+  transition: all 300ms ease;
+}
+</style>

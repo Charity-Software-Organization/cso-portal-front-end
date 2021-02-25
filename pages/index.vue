@@ -8,13 +8,13 @@
     <!-- Feature Area -->
     <div class="feature-area">
       <div class="container">
-        <div class="row">
+        <el-row :gutter="30">
           <feature-card
             v-for="item in featureCardList"
             :key="item.title"
             :cardItem="item"
           />
-        </div>
+        </el-row>
       </div>
     </div>
     <!-- Service Area-->
@@ -28,7 +28,7 @@
             </div>
           </div>
         </div>
-        <div class="row">
+        <el-row :gutter="30">
           <card
             v-for="(item, index) in cardList"
             :key="item.title"
@@ -37,7 +37,7 @@
             :cardItem="item"
             @mouseover.native="handleChangeActiveCardIndex(index)"
           ></card>
-        </div>
+        </el-row>
       </div>
     </div>
     <!-- Causes Area-->
@@ -52,9 +52,9 @@
           </div>
         </div>
 
-        <div class="row">
+        <el-row :gutter="30">
           <cause-card v-for="item in 3" :key="item" />
-        </div>
+        </el-row>
       </div>
     </div>
   </div>
