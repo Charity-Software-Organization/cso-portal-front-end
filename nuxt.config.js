@@ -14,7 +14,7 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script: [
-      {src: "js/jquery.js"},
+      {src: "js/jquery.slim.min.js"},
       {src: "js/popper.min.js"},
       {src: "js/wow.min.js"},
       {src: "js/jquery.waypoints.min.js"},

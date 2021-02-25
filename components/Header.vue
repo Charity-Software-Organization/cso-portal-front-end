@@ -1,4 +1,33 @@
 <template>
+
+<div>
+
+
+    <!-- Header Top Area -->
+    <div class="header-top-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="site-info">
+                        <ul>
+                            <li><a href="Jameszow@163.com"><i class="fa fa-envelope"></i> XXX</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <p class="welcome-message">Welcome to the <b>Charity</b> Software Organization</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 text-right">
+                    <div class="social-icon">
+                        <a href=""><i class="lab la-facebook-f"></i></a>
+                        <a href=""><i class="lab la-instagram"></i></a>
+                        <a href=""><i class="lab la-twitter"></i></a>
+                        <a href=""><i class="la la-dribbble"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 <!-- Header Area -->
 
     <div class="header-area">
@@ -39,8 +68,30 @@
             </div>
         </div>
     </div>
-
+</div>
 </template>
+
+
+<script>
+export default {
+  name: "Header",
+  props: {
+    // cardItem: {
+    //   type: Object,
+    //   default: () => ({
+    //     imageSrc: "assets/img/service-bg-1.jpg",
+    //     title: "Charity for Education",
+    //     desc: "Pure Water dolor sit amet, consectetur adipisicing elit.",
+    //   }),
+    // },
+    // cardActiveIndex:{
+    //   type:Number,
+    //   default:0
+    // },
+    // currentIndex:Number
+  },
+};
+</script>
 
 <style>
 #app {
