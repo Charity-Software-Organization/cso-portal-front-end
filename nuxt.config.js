@@ -17,7 +17,17 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    'element-ui/lib/theme-chalk/index.css'
+    'element-ui/lib/theme-chalk/index.css',
+    '~assets/css/animate.css',
+    '~assets/css/bariller.css',
+    '~assets/css/bootstrap.min.css',
+    '~assets/css/flaticon.css',
+    '~assets/css/font-awesome.min.css',
+    '~assets/css/line-awesome.min.css',
+    '~assets/css/magnific-popup.css',
+    '~assets/css/owl.carousel.css',
+    '~assets/css/responsive.css',
+    '~assets/css/style.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
