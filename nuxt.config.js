@@ -14,7 +14,7 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script: [
-      {src: "js/jquery.slim.min.js"},
+      {src: "js/jquery-3.5.1.min.js"},
       {src: "js/jquery.sticky.js"},
       {src: "js/jquery.barfiller.js"},
       {src: "js/jquery.waypoints.min.js"},

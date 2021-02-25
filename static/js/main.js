@@ -176,6 +176,7 @@
         if ($(this).scrollTop() > 6000) {
             $('.go-top').fadeIn(200);
         } else {
+            // 
             $('.go-top').fadeOut(200);
         }
     });
@@ -221,6 +222,7 @@
     });
 
     jQuery(window).on("load", function() {
+        //
         jQuery(".site-preloader-wrap, .slide-preloader-wrap").fadeOut(1000);
     });
 
