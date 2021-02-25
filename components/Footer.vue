@@ -64,10 +64,8 @@
             </div>
         </div>
     </footer>
-
     <!-- Scroll Top Area -->
     <el-backtop>
-       <a href="#top" class="go-top" style="display: block;"><i class="fa fa-angle-up"></i></a>
     </el-backtop>
   <!-- <div id="nav">
     <h1>Footer</h1>
@@ -87,8 +85,6 @@ export default {
 </script>
 
 <style>
-
-
 /* Scrolltop section */
 .go-top {
     background-color: #EFC94C;
