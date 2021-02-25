@@ -19,8 +19,8 @@ export default {
   css: [
     'element-ui/lib/theme-chalk/index.css',
     '~assets/css/animate.css',
-    '~assets/css/bariller.css',
-    '~assets/css/bootstrap.min.css',
+    '~assets/css/barfiller.css',
+    '~assets/css/bootstrap.min.css', 
     '~assets/css/flaticon.css',
     '~assets/css/font-awesome.min.css',
     '~assets/css/line-awesome.min.css',

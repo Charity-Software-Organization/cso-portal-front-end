@@ -73,7 +73,7 @@ h1,
 h2,
 h3,
 h4,
-h5,
+h5
 {
     position: relative;
     font-family: 'Quicksand', sans-serif;
@@ -433,103 +433,103 @@ textarea:focus::-webkit-input-placeholder {
 ============== */
 
 .single-slide-item {
-    background-image: url(../img/hero-area-bg-2.jpg);
+    /* background-image: url(../img/hero-area-bg-2.jpg); */
 }
 
 .hero-area-bg-2 {
-    background-image: url(../img/hero-area-bg-4.jpg);
+    /* background-image: url(../img/hero-area-bg-4.jpg); */
 }
 
 .hero-area.theme-3 {
-    background-image: url(../img/hero-area-bg-3.jpg);
+    /* background-image: url(../img/hero-area-bg-3.jpg); */
 }
 
 .cta-area {
-    background-image: url(../img/cta-bg-1.png);
+    /* background-image: url(../img/cta-bg-1.png); */
 }
 
 .event-bg-1 {
-    background-image: url(../img/event-bg-1.jpg);
+    /* background-image: url(../img/event-bg-1.jpg); */
 }
 
 .event-bg-2 {
-    background-image: url(../img/event-bg-2.jpg);
+    /* background-image: url(../img/event-bg-2.jpg); */
 }
 
 .event-bg-3 {
-    background-image: url(../img/event-bg-3.jpg);
+    /* background-image: url(../img/event-bg-3.jpg); */
 }
 
 .event-bg-4 {
-    background-image: url(../img/event-bg-4.jpg);
+    /* background-image: url(../img/event-bg-4.jpg); */
 }
 
 .absolute-bg-1 {
-    background-image: url(../img/event-bg-1.jpg)
+    /* background-image: url(../img/event-bg-1.jpg) */
 }
 
 .absolute-bg-2 {
-    background-image: url(../img/event-bg-2.jpg)
+    /* background-image: url(../img/event-bg-2.jpg) */
 }
 
 .absolute-bg-3 {
-    background-image: url(../img/event-bg-3.jpg)
+    /* background-image: url(../img/event-bg-3.jpg) */
 }
 
 .absolute-bg-4 {
-    background-image: url(../img/event-bg-4.jpg)
+    /* background-image: url(../img/event-bg-4.jpg) */
 }
 
 .team-member-bg {
-    background-image: url(../img/volunteer-1.jpg);
+    /* background-image: url(../img/volunteer-1.jpg); */
 }
 
 .volunteer-bg-2 {
-    background-image: url(../img/volunteer-2.jpg);
+    /* background-image: url(../img/volunteer-2.jpg); */
 }
 
 .volunteer-bg-3 {
-    background-image: url(../img/volunteer-3.jpg);
+    /* background-image: url(../img/volunteer-3.jpg); */
 }
 
 .volunteer-bg-4 {
-    background-image: url(../img/volunteer-4.jpeg);
+    /* background-image: url(../img/volunteer-4.jpeg); */
 }
 
 .volunteer-bg-5 {
-    background-image: url(../img/volunteer-5.jpg);
+    /* background-image: url(../img/volunteer-5.jpg); */
 }
 
 .volunteer-bg-6 {
-    background-image: url(../img/volunteer-6.jpg);
+    /* background-image: url(../img/volunteer-6.jpg); */
 }
 
 .breadcroumb-area {
-    background-image: url(../img/bread-bg.jpg);
+    /* background-image: url(../img/bread-bg.jpg); */
 }
 
 .breadcroumb-area.bread-bg-2 {
-    background-image: url(../img/bread-bg-2.jpg);
+    /* background-image: url(../img/bread-bg-2.jpg); */
 }
 
 .breadcroumb-area.bread-bg-3 {
-    background-image: url(../img/bread-bg-3.jpg);
+    /* background-image: url(../img/bread-bg-3.jpg); */
 }
 
 .breadcroumb-area.bread-bg-4 {
-    background-image: url(../img/bread-bg-4.png);
+    /* background-image: url(../img/bread-bg-4.png); */
 }
 
 .breadcroumb-area.bread-bg-5 {
-    background-image: url(../img/bread-bg-5.jpg);
+    /* background-image: url(../img/bread-bg-5.jpg); */
 }
 
 .breadcroumb-area.bread-bg-6 {
-    background-image: url(../img/bread-bg-6.jpg);
+    /* background-image: url(../img/bread-bg-6.jpg); */
 }
 
 .breadcroumb-area.bread-bg-7 {
-    background-image: url(../img/bread-bg-7.jpg);
+    /* background-image: url(../img/bread-bg-7.jpg); */
 }
 
 
@@ -930,7 +930,7 @@ textarea:focus::-webkit-input-placeholder {
 
 .about-content {
     margin-top: 30px;
-    -webkit-transition: transition: all 300ms ease;
+    -webkit-transition: transition all 300ms ease;
     transition: all 300ms ease;
 }
 
@@ -953,7 +953,7 @@ textarea:focus::-webkit-input-placeholder {
 ======================= */
 
 .hero-area {
-    background-image: url(../img/hero-bg.jpg);
+    /* background-image: url(../img/hero-bg.jpg); */
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -1747,15 +1747,15 @@ p.event-date {
 }
 
 .single-process-bg {
-    background-image: url(../img/process-1.jpg);
+    /* background-image: url(../img/process-1.jpg); */
 }
 
 .process-bg-2 {
-    background-image: url(../img/process-2.jpg);
+    /* background-image: url(../img/process-2.jpg); */
 }
 
 .process-bg-3 {
-    background-image: url(../img/process-3.jpg);
+    /* background-image: url(../img/process-3.jpg); */
 }
 
 .single-process-bg {
@@ -1819,7 +1819,7 @@ p.event-date {
 ========================*/
 
 .testimonial-slider-bg {
-    background-image: url(../img/testimonial-slider-bg.jpg);
+    /* background-image: url(../img/testimonial-slider-bg.jpg); */
 }
 
 .testimonial-slider-bg {
@@ -2305,7 +2305,7 @@ p.privacy {
 ============== */
 
 .about-us-bg {
-    background-image: url(../img/about-bg-2.jpg)
+    /* background-image: url(../img/about-bg-2.jpg) */
 }
 
 .about-us-bg {
@@ -2422,31 +2422,31 @@ ul.port-menu li {
 }
 
 .single-portfolio-item {
-    background-image: url(../img/port-bg-2.jpeg);
+    /* background-image: url(../img/port-bg-2.jpeg); */
 }
 
 .port-bg-2 {
-    background-image: url(../img/port-bg-1.jpg);
+    /* background-image: url(../img/port-bg-1.jpg); */
 }
 
 .port-bg-3 {
-    background-image: url(../img/port-bg-3.jpg);
+    /* background-image: url(../img/port-bg-3.jpg); */
 }
 
 .port-bg-4 {
-    background-image: url(../img/port-bg-4.jpg);
+    /* background-image: url(../img/port-bg-4.jpg); */
 }
 
 .port-bg-5 {
-    background-image: url(../img/port-bg-5.jpg);
+    /* background-image: url(../img/port-bg-5.jpg); */
 }
 
 .port-bg-6 {
-    background-image: url(../img/port-bg-6.jpg);
+    /* background-image: url(../img/port-bg-6.jpg); */
 }
 
 .port-bg-7 {
-    background-image: url(../img/port-bg-7.jpg);
+    /* background-image: url(../img/port-bg-7.jpg); */
 }
 
 .portfolio-list {
@@ -2795,7 +2795,7 @@ ul.port-menu.recent {
 }
 
 .single-program-item:before {
-    background-image: url(../img/program-before-bg.jpg);
+    /* background-image: url(../img/program-before-bg.jpg); */
 }
 
 .single-program-item:before {
