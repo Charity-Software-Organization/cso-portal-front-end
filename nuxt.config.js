@@ -42,6 +42,7 @@ export default {
     '~assets/css/owl.carousel.css',
     '~assets/css/responsive.css',
     '~assets/css/style.css',
+    {src:"~/assets/css/index.scss",lang:"scss"}
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

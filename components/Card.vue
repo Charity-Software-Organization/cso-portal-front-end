@@ -7,10 +7,7 @@
 -->
 <template>
   <el-col :md="6" :sm="12" :xs="24" :span="6">
-    <div
-      class="single-service-item"
-      :class="{ active: currentIndex === cardActiveIndex }"
-    >
+    <div class="single-service-item" :class="activeClass">
       <img :src="cardItem.imageSrc" alt="">
       <h5>{{ cardItem.title }}</h5>
       <p>{{ cardItem.desc }}</p>
@@ -35,13 +32,22 @@ export default {
       default: 0
     },
     currentIndex: { type: Number, required: true }
+  },
+  computed: {
+    activeClass () {
+      if (this.cardActiveIndex === this.currentIndex) {
+        return ['active', 'bg-green']
+      } else {
+        return ['bg-white']
+      }
+    }
   }
 }
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/css/_variables";
 .single-service-item {
-  background: #fff;
   padding: 15px;
   text-align: center;
   margin-top: 30px;
@@ -52,16 +58,15 @@ export default {
   border-radius: 7px;
 
   &.active {
-    background: #00b965;
-    color: #fff;
+    color: $white;
 
     h5,
     p {
-      color: #fff;
+      color: $white;
     }
 
     h5:after {
-      background-color: #ffd857;
+      background-color: $yellow;
     }
   }
 
@@ -79,7 +84,7 @@ export default {
       bottom: -21px;
       left: 50%;
       margin-left: -35px;
-      background: #00b965;
+      background: $green;
     }
   }
 

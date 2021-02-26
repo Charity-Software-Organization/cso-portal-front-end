@@ -53,6 +53,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/css/_variables";
 .about-left {
   margin-right: 60px;
   position: relative;
@@ -68,7 +69,7 @@ export default {
   &:before {
     bottom: -20px;
     right: 20px;
-    background: #ffd857;
+    background: $yellow;
     z-index: -1;
   }
 
@@ -77,7 +78,7 @@ export default {
 
     top: 0;
     left: 0;
-    background: #00b965;
+    background: $green;
     opacity: 0.3;
   }
 

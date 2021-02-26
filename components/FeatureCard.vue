@@ -34,6 +34,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/css/_variables";
 .single-feature-item {
   text-align: center;
   padding: 25px;
@@ -54,7 +55,7 @@ export default {
       left: -35px;
       width: 70px;
       height: 70px;
-      background: #ffd857;
+      background: $yellow;
       border-radius: 50%;
       z-index: -1;
       opacity: 0.9;
@@ -66,7 +67,7 @@ export default {
 .feature-icon i:before {
   font-size: 60px;
   font-weight: 400;
-  color: #00b965;
+  color: $green;
 }
 
 .feature-icon:hover i:after {
