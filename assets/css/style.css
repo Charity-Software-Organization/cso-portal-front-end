@@ -1814,7 +1814,7 @@ a.read-more:hover {
   border-radius: 10px;
 }
 
-.single-team-member {
+/* .single-team-member {
   position: relative;
   margin-top: 25px;
 }
@@ -1832,7 +1832,7 @@ a.read-more:hover {
   text-align: center;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
-}
+} */
 
 .team-content .team-title {
   font-weight: 500;
@@ -1872,23 +1872,23 @@ ul.team-social li a {
   transition: all 0.3s ease-out;
 }
 
-.single-team-member:hover .team-social li a {
+/* .single-team-member:hover .team-social li a {
   color: #ffd857;
-}
+} */
 
-.single-team-member:hover .team-content {
+/* .single-team-member:hover .team-content {
   bottom: 0;
   background-color: #00b965;
-}
+} */
 
-.single-team-member:hover .team-content .team-title a {
+/* .single-team-member:hover .team-content .team-title a {
   color: #fff;
 }
 
 .single-team-member:hover .team-content .team-subtitle p {
   color: #fff;
   margin: 0;
-}
+} */
 
 /* Client CSS  */
 
