@@ -73,8 +73,22 @@
         </div>
     </div>
 
-      <!-- Blog Area-->
+  <!--Events Area -->
+    <div class="event-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 mar-bt-30 text-center ">
+                    <div class="section-title">
+                        <h6>You can join us</h6>
+                        <h2>Our <b>Events</b> </h2>
+                    </div>
+                </div>
+            </div>
 
+        </div>
+    </div>
+
+    <!-- Blog Area-->
     <div class="blog-area gray-bg section-padding">
         <div class="container">
             <div class="row">
