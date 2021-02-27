@@ -50,12 +50,61 @@
             </div>
           </div>
         </div>
-
         <el-row :gutter="30">
           <cause-card v-for="item in 3" :key="item" />
         </el-row>
+         <div class="col-lg-12 text-center">
+            <a href="" class="line-btn mt-20 black">View All Cases</a>
+        </div>
       </div>
+    </div>'
+    
+    <!-- Acheivement Area -->
+    <div class="achievement-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6" v-for="(item) in acheivementList" :key="item">
+                    <div class="single-counter-box">
+                        <p class="counter-number"><span>{{ item.num }}</span></p>
+                        <h6>{{ item.title}}</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+      <!-- Blog Area-->
+
+    <div class="blog-area gray-bg section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 mar-bt-30 text-center ">
+                    <div class="section-title">
+                        <h6>Everything Changes</h6>
+                        <h2>Latest <b>Article</b></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6" v-for="item in 3 " :key="item">
+                    <div class="single-blog-item">
+                        <div class="blog-bg">
+                            <img src="assets/img/blog-bg-1.jpg" alt="">
+                            <div class="blog-content">
+                                <p class="blog-meta">Posted by <b>Admin</b> on Mar 30, 2020</p>
+                                <h5><a href="#">Awareness of Community Response to COVID-19</a></h5>
+                                <p>The provision of education relating to indigenous horticulture,psum dolor sit amet agriculture l</p>
+                                <a href="#" class="read-more">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
   </div>
 </template>
 
@@ -114,6 +163,12 @@ export default {
           desc: "Pure Water dolor sit amet, consectetur adipisicing elit.",
         },
       ],
+      acheivementList:[
+        {num:324,title:"Volunteers"},
+        {num:984,title:"Campaign"},
+        {num:750,title:"Donation"},
+        {num:820,title:"Awards"}
+      ]
     };
   },
   methods: {
