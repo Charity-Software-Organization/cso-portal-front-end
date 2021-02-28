@@ -1,91 +1,93 @@
 <template>
   <!-- Footer Area -->
-  <div>
-    <footer class="footer-area">
-      <div class="container">
-        <div class="footer-up">
-          <el-row>
-            <el-col :sm="24" :md="12" :lg="6">
-              <div class="logo">
-                <a class="navbar-brand" href="#"><img src="assets/img/logo-white.png" alt=""></a>
-              </div>
-              <p>A fresh and modern theme <br>for all charity</p>
-              <div class="contact-info">
-                <h5>Contact Us</h5>
-                <p>XXX </p>
-              </div>
-            </el-col>
-            <el-col :sm="24" :md="12" :lg="6">
-              <h5>Useful Links</h5>
-              <ul>
-                <li>
-                  <a>
-                    <NuxtLink to="/">Home</NuxtLink>
-                  </a>
-                  <a>
-                    <NuxtLink to="/about">About Us</NuxtLink>
-                  </a>
-                  <a href="#">Our Causes</a>
-                  <a href="#">Our Events</a>
-                  <a>
-                    <NuxtLink to="/contact">Contact</NuxtLink>
-                  </a>
-                </li>
-              </ul>
-            </el-col>
-            <el-col :sm="24" :md="12" :lg="6">
-              <h5>Our Causes</h5>
-              <ul>
-                <li>
-                  <a href="#">Water Purify</a>
-                  <a href="#">Food Collect</a>
-                  <a href="#">Health Fund</a>
-                  <a href="#">Free Eduction</a>
-                  <a href="#">Nutritution Fact</a>
-                </li>
-              </ul>
-            </el-col>
-            <el-col :md="12" :lg="6">
-              <div class="subscribe-form">
-                <h5>Subscribe</h5>
-                <p>Charry is a nonproﬁt organization supported by community leaders,</p>
-                <form action="index.html">
-                  <!-- 无法自定义样式 -->
-                  <!-- <el-input v-model="subscribeInput" type="email" placeholder="Email" >
+
+  <footer class="footer-area">
+    <el-row class="footer-up">
+      <el-col :sm="24" :md="12" :lg="6">
+        <div class="logo">
+          <a
+            class="navbar-brand"
+            href="#"
+          ><img
+            src="assets/img/logo-white.png"
+            alt=""
+          ></a>
+        </div>
+        <p>A fresh and modern theme <br>for all charity</p>
+        <div class="contact-info">
+          <h5>联系我们</h5>
+          <p>example@163.com</p>
+        </div>
+      </el-col>
+      <el-col :sm="24" :md="12" :lg="6">
+        <h5>页面</h5>
+        <ul>
+          <li>
+            <a>
+              <NuxtLink to="/">主页</NuxtLink>
+            </a>
+            <a>
+              <NuxtLink to="/about">关于</NuxtLink>
+            </a>
+            <!-- <a href="#">Our Causes</a>
+            <a href="#">Our Events</a> -->
+            <a>
+              <NuxtLink to="/contact">联系</NuxtLink>
+            </a>
+          </li>
+        </ul>
+      </el-col>
+      <el-col :sm="24" :md="12" :lg="6">
+        <h5>友情链接</h5>
+        <ul>
+          <li>
+            <a href="#">友站一</a>
+            <a href="#">友站二</a>
+            <a href="#">友站三</a>
+            <a href="#">友站四</a>
+            <a href="#">友站五</a>
+          </li>
+        </ul>
+      </el-col>
+      <el-col :md="12" :lg="6">
+        <div class="subscribe-form">
+          <h5>订阅</h5>
+          <p>
+            我们是一个由社区支持的组织。
+          </p>
+          <form action="index.html">
+            <!-- 无法自定义样式 -->
+            <!-- <el-input v-model="subscribeInput" type="email" placeholder="Email" >
                      <el-button slot="append"><i class="fa fa-paper-plane" /></el-button>
                   </el-input> -->
-                  <input v-model="subscribeInput" type="email" placeholder="Email">
-                  <button @click="subscribe()"><i class="fa fa-paper-plane" /></button>
-                </form>
-              </div>
-            </el-col>
-          </el-row>
+            <input v-model="subscribeInput" type="email" placeholder="Email">
+            <button @click="subscribe()">
+              <i class="fa fa-paper-plane" />
+            </button>
+          </form>
         </div>
-        <div class="footer-bottom">
-          <el-row type="flex" justify="center" align="center">
-            <el-col :sm="24" :md="12" :lg="12">
-              <p class="copyright-line">
-                Copyright &copy; 2021. CSO All rights reserved.
-              </p>
-            </el-col>
-            <el-col :sm="24" :md="12" :lg="12">
-              <p class="privacy" />
-            </el-col>
-          </el-row>
-        </div>
-      </div>
-    </footer>
-    <!-- Scroll Top Area -->
-    <el-backtop />
-  <!-- <div id="nav">
-    <h1>Footer</h1>
-    <NuxtLink to="/">Home</NuxtLink>
-    <span>|</span>
-    <NuxtLink to="/about">About</NuxtLink>
-    <span>|</span>
-    <NuxtLink to="/contact">Contact</NuxtLink>
-  </div> -->
-  </div>
+      </el-col>
+    </el-row>
+
+    <el-row class="footer-bottom">
+      <el-col :sm="24" :md="12" :lg="12">
+        <p class="copyright-line">
+          Copyright &copy; 2021. CSO All rights reserved.
+        </p>
+      </el-col>
+      <el-col :sm="24" :md="12" :lg="12">
+        <p class="privacy">
+          隐私保护政策
+        </p>
+      </el-col>
+      <el-col :sm="24" :md="12" :lg="12">
+        <p class="beian">
+          沪备****号
+        </p>
+      </el-col>
+    </el-row>
+  </footer>
+  <!-- Scroll Top Area -->
 </template>
 
 <script>
@@ -103,8 +105,47 @@ export default {
 }
 </script>
 
-<style scope>
-/* Footer Area CSS ============== */
+<style lang="scss" scope>
+input {
+  background: #efc94c;
+  border-color: #efc94c;
+  margin-top: 30px;
+  width: 100%;
+
+  border: 1px solid #ddd;
+  padding: 15px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+input::placeholder {
+  color: #fff;
+  font-size: 15px;
+}
+
+.footer-area {
+  padding: 2em;
+  background: #13303e;
+  color: #fff;
+  .footer-up {
+  }
+  .footer-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .privacy {
+      margin-right: 1em;
+    }
+  }
+}
+//Footer Area CSS ==============
 .footer-area {
   background: #13303e;
   color: #fff;
@@ -168,7 +209,7 @@ export default {
 }
 
 /* 是否为shodow root？ */
-/* .subscribe-form el-input {
+.subscribe-form el-input {
   background: #efc94c;
   border-color: #efc94c;
   margin-top: 30px;
@@ -177,7 +218,7 @@ export default {
 .subscribe-form el-input::placeholder {
   color: #fff;
   font-size: 15px;
-} */
+}
 
 .footer-up {
   padding: 80px 0;

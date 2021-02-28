@@ -1,24 +1,24 @@
 <template>
-  <div>
+  <!-- div.page 页 -->
+  <div class="page">
     <Header />
-
     <Nuxt />
-
     <Footer />
+    <el-backtop />
   </div>
 </template>
 
-<style>
+<style lang="scss">
+.page {
+  min-height: 100vh;
+  width: 100vw;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
 html {
-  font-family:
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;

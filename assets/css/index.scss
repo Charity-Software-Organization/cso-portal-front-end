@@ -1,4 +1,6 @@
 @import "variables";
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Source+Sans+Pro:300,400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&display=swap");
 
 // text bg
 @each $colorKey, $color in $colors {
@@ -9,3 +11,114 @@
     background-color: $color;
   }
 }
+
+
+
+// 全局样式
+html {
+  font-family:
+  "Quicksand",
+    'Source Sans Pro',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    'Helvetica Neue',
+    Arial,
+    sans-serif;
+  font-size: 16px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  position: relative;
+  z-index: 1;
+  background: #fff;
+  color: #191919;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  position: relative;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  margin: 0;
+  color: #191919;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  
+}
+
+p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 32px;
+  position: relative;
+  color: #686868;
+}
+
+button,
+input,
+textarea,
+a:hover,
+a:focus,
+a:visited {
+  text-decoration: none;
+  outline: none;
+  outline-width: 0 !important;
+}
+
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+}
+
+i,
+span,
+a {
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  display: inline-block;
+}
+
+

@@ -14,34 +14,45 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script: [
-      { src: 'js/jquery-3.5.1.min.js' },
-      { src: 'js/jquery.sticky.js' },
-      { src: 'js/jquery.barfiller.js' },
-      { src: 'js/jquery.waypoints.min.js' },
-      { src: 'js/jquery.counterup.min.js' },
-      { src: 'js/popper.min.js' },
+      // 动画库
+      { src: 'js/anijs-min.js' },
+      { src: 'js/anijs-helper-dom-min.js' },
+      { src: 'js/anijs-helper-scrollreveal-min.js' },
       { src: 'js/wow.min.js' },
-      { src: 'js/owl.carousel.min.js' },
-      { src: 'js/isotope-3.0.6-min.js' },
-      { src: 'js/magnific-popup.min.js' },
-      { src: 'js/bootstrap.min.js' },
-      { src: 'js/main.js' }
+      // 主入口
+      { src: 'js/main.js' },
+      // 其他依次删除
+      // { src: 'js/jquery-3.5.1.min.js' },
+      // { src: 'js/jquery.sticky.js' },
+      // { src: 'js/jquery.barfiller.js' },
+      // { src: 'js/jquery.waypoints.min.js' },
+      // { src: 'js/jquery.counterup.min.js' },
+      // { src: 'js/popper.min.js' },
+      
+      // { src: 'js/owl.carousel.min.js' },
+      // { src: 'js/isotope-3.0.6-min.js' },
+      // { src: 'js/magnific-popup.min.js' },
+      // { src: 'js/bootstrap.min.js' },
     ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     'element-ui/lib/theme-chalk/index.css',
-    '~assets/css/animate.css',
-    '~assets/css/barfiller.css',
-    '~assets/css/bootstrap.min.css',
-    '~assets/css/flaticon.css',
+    
+    // '~assets/css/barfiller.css',
+    // '~assets/css/bootstrap.min.css',
+    // '~assets/css/flaticon.css',
+    
+    // '~assets/css/magnific-popup.css',
+    // '~assets/css/owl.carousel.css',
+    // '~assets/css/responsive.css',
+
+    // 字体图标样式
     '~assets/css/font-awesome.min.css',
     '~assets/css/line-awesome.min.css',
-    '~assets/css/magnific-popup.css',
-    '~assets/css/owl.carousel.css',
-    '~assets/css/responsive.css',
-    '~assets/css/style.css',
+    // 基本样式
+    // '~assets/css/style.css',
     { src: '~/assets/css/index.scss', lang: 'scss' }
   ],
 

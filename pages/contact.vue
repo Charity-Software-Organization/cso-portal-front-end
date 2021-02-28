@@ -1,3 +1,5 @@
 <template>
-  <h1>Hello Contact!</h1>
+  <h1 class="wow bounceInUp">
+    Hello Contact!
+  </h1>
 </template>
