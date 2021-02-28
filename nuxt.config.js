@@ -14,18 +14,18 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script: [
-      {src: "js/jquery-3.5.1.min.js"},
-      {src: "js/jquery.sticky.js"},
-      {src: "js/jquery.barfiller.js"},
-      {src: "js/jquery.waypoints.min.js"},
-      {src: "js/jquery.counterup.min.js"},
-      {src: "js/popper.min.js"},
-      {src: "js/wow.min.js"},
-      {src: "js/owl.carousel.min.js"},
-      {src: "js/isotope-3.0.6-min.js"},
-      {src: "js/magnific-popup.min.js"},
-      {src: "js/bootstrap.min.js"},
-      {src: "js/main.js"},
+      { src: 'js/jquery-3.5.1.min.js' },
+      { src: 'js/jquery.sticky.js' },
+      { src: 'js/jquery.barfiller.js' },
+      { src: 'js/jquery.waypoints.min.js' },
+      { src: 'js/jquery.counterup.min.js' },
+      { src: 'js/popper.min.js' },
+      { src: 'js/wow.min.js' },
+      { src: 'js/owl.carousel.min.js' },
+      { src: 'js/isotope-3.0.6-min.js' },
+      { src: 'js/magnific-popup.min.js' },
+      { src: 'js/bootstrap.min.js' },
+      { src: 'js/main.js' }
     ]
   },
 
@@ -34,7 +34,7 @@ export default {
     'element-ui/lib/theme-chalk/index.css',
     '~assets/css/animate.css',
     '~assets/css/barfiller.css',
-    '~assets/css/bootstrap.min.css', 
+    '~assets/css/bootstrap.min.css',
     '~assets/css/flaticon.css',
     '~assets/css/font-awesome.min.css',
     '~assets/css/line-awesome.min.css',
@@ -42,6 +42,7 @@ export default {
     '~assets/css/owl.carousel.css',
     '~assets/css/responsive.css',
     '~assets/css/style.css',
+    { src: '~/assets/css/index.scss', lang: 'scss' }
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

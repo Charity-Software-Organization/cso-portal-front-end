@@ -56,6 +56,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/css/_variables";
 .each-case-2 {
   border-radius: 6px;
   padding: 20px;
@@ -80,8 +81,8 @@ export default {
     margin-bottom: 5px;
   }
   .btn {
-    background: #00b965;
-    color: #fff;
+    background: $green;
+    color: $white;
     padding: 11px 27px;
     margin: 25px 0;
     letter-spacing: 1px;
