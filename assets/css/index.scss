@@ -12,8 +12,6 @@
   }
 }
 
-
-
 // 全局样式
 html {
   font-family:
@@ -121,4 +119,12 @@ li {
   display: inline-block;
 }
 
+
+
+// 对齐方式
+@each $align in $aliginment {
+  .text-#{$align} {
+    text-align: $align;
+  }
+}
 

@@ -26,7 +26,8 @@
             {{ cardItem.desc }}
           </p>
 
-          <a href="#" class="main-btn">Discover More</a>
+          <!-- <a href="#" class="main-btn">Discover More</a> -->
+          <cso-button>Discover More</cso-button>
         </div>
       </el-col>
     </el-row>
