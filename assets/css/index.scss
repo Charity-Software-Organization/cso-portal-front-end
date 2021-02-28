@@ -9,3 +9,10 @@
     background-color: $color;
   }
 }
+
+// 对齐方式
+@each $align in $aliginment {
+  .text-#{$align} {
+    text-align: $align;
+  }
+}

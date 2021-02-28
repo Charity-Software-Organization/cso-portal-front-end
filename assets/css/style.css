@@ -234,23 +234,23 @@ li {
 
 /*Section Title */
 
-.section-title {
+/* .section-title {
   position: relative;
-}
+} */
 
-.section-title h2 {
+/* .section-title h2 {
   font-size: 50px;
   font-weight: 500;
   line-height: 60px;
   letter-spacing: 1px;
   margin: 20px 0;
-}
+} */
 
-.section-title h2 b {
+/* .section-title h2 b {
   color: #ffd857;
-}
+} */
 
-@media only screen and (min-width: 576px) and (max-width: 767px) {
+/* @media only screen and (min-width: 576px) and (max-width: 767px) {
   .section-title h2 {
     font-size: 40px;
     line-height: 55px;
@@ -266,19 +266,19 @@ li {
     margin: 8px 0;
     margin-bottom: 15px;
   }
-}
+} */
 
 .section-title h5 {
   font-size: 18px;
   letter-spacing: 2px;
 }
 
-.section-title h6 {
+/* .section-title h6 {
   color: #00b965;
   font-size: 17px;
   text-transform: uppercase;
   letter-spacing: 1px;
-}
+} */
 
 /*Button Style */
 
@@ -1913,7 +1913,6 @@ ul.team-social li a {
   opacity: 1;
 }
 
-
 /* About Section-2 CSS
 ============== */
 
@@ -2380,7 +2379,7 @@ ul.port-menu.recent {
 /* Program Section CSS 
 ============== */
 
-.single-program-item {
+/* .single-program-item {
   background: #00b965;
   color: #fff;
   padding: 15px;
@@ -2393,20 +2392,20 @@ ul.port-menu.recent {
   border-radius: 15px;
   margin-top: 30px;
   margin-bottom: 40px;
-}
+} */
 
-.single-program-item h5 {
+/* .single-program-item h5 {
   font-size: 24px;
   font-weight: 600;
   margin: 28px 0;
   position: relative;
-}
+} */
 
-.single-program-item p {
+/* .single-program-item p {
   color: #fff;
-}
+} */
 
-.single-program-item h5:after {
+/* .single-program-item h5:after {
   position: absolute;
   content: "";
   width: 70px;
@@ -2415,12 +2414,12 @@ ul.port-menu.recent {
   left: 50%;
   margin-left: -35px;
   background: #ffd857;
-}
+} */
 
-.single-program-item i::before {
+/* .single-program-item i::before {
   font-size: 60px;
   color: #fff;
-}
+} */
 
 .about-us-content-area h5 {
   margin: 25px 0;
@@ -2430,10 +2429,10 @@ ul.port-menu.recent {
   margin-bottom: 30px;
 }
 
-.single-program-item i {
+/* .single-program-item i {
   position: relative;
   z-index: 1;
-}
+} */
 
 .program-area.theme-3 img {
   border-radius: 10px;

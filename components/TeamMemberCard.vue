@@ -4,10 +4,10 @@
       <div class="team-member-bg">
         <div class="team-content">
           <div class="team-title">
-            <a href="#">James Cameron</a>
+            <a href="#">{{ memeber.name }}</a>
           </div>
           <div class="team-subtitle">
-            <p>Social Activist</p>
+            <p>{{ memeber.job }}</p>
           </div>
           <ul class="team-social">
             <li>
@@ -28,11 +28,21 @@
 
 <script>
 export default {
-  name: 'TeamMemberCard'
+  name: 'TeamMemberCard',
+  props: {
+    memeber: {
+      type: Object,
+      default: () => ({
+        name: 'James Cameron',
+        job: 'Social Activist'
+      })
+    }
+  }
 }
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/css/_variables";
 .single-team-member {
   position: relative;
   margin-top: 25px;
@@ -44,24 +54,24 @@ export default {
     bottom: -31px;
     left: 0;
     right: 0;
-    background: #fff;
+    background: $white;
     text-align: center;
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
   }
   &:hover {
     .team-social li a {
-      color: #ffd857;
+      color: $yellow;
     }
     .team-content {
       bottom: 0;
-      background-color: #00b965;
+      background-color: $green;
     }
     .team-title a {
-      color: #fff;
+      color: $white;
     }
     .team-subtitle p {
-      color: #fff;
+      color: $white;
       margin: 0;
     }
   }

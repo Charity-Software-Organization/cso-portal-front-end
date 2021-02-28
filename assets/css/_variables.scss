@@ -2,8 +2,13 @@
 $green: #00b965;
 $yellow: #ffd857;
 $white: #fff;
+$dark-blue:#25283a;
+$black-1:#191919;
 $colors: (
   "green": $green,
   "yellow": $yellow,
   "white": $white
 );
+
+// 对齐方式
+$aliginment:('left','center','right');
