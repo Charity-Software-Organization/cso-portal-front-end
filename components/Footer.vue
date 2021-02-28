@@ -4,8 +4,8 @@
     <footer class="footer-area">
       <div class="container">
         <div class="footer-up">
-          <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-12">
+          <el-row>
+            <el-col :sm="24" :md="12" :lg="6">
               <div class="logo">
                 <a class="navbar-brand" href="#"><img src="assets/img/logo-white.png" alt=""></a>
               </div>
@@ -14,20 +14,26 @@
                 <h5>Contact Us</h5>
                 <p>XXX </p>
               </div>
-            </div>
-            <div class="col-lg-3 col-md-6 com-sm-12">
+            </el-col>
+            <el-col :sm="24" :md="12" :lg="6">
               <h5>Useful Links</h5>
               <ul>
                 <li>
-                  <a href="#">Home</a>
-                  <a href="#">About Us</a>
+                  <a>
+                    <NuxtLink to="/">Home</NuxtLink>
+                  </a>
+                  <a>
+                    <NuxtLink to="/about">About Us</NuxtLink>
+                  </a>
                   <a href="#">Our Causes</a>
                   <a href="#">Our Events</a>
-                  <a href="#">Contact</a>
+                  <a>
+                    <NuxtLink to="/contact">Contact</NuxtLink>
+                  </a>
                 </li>
               </ul>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
+            </el-col>
+            <el-col :sm="24" :md="12" :lg="6">
               <h5>Our Causes</h5>
               <ul>
                 <li>
@@ -38,30 +44,34 @@
                   <a href="#">Nutritution Fact</a>
                 </li>
               </ul>
-            </div>
-            <div class="col-lg-3 col-md-6">
+            </el-col>
+            <el-col :md="12" :lg="6">
               <div class="subscribe-form">
                 <h5>Subscribe</h5>
                 <p>Charry is a nonproﬁt organization supported by community leaders,</p>
                 <form action="index.html">
-                  <input type="email" placeholder="Email">
-                  <button><i class="fa fa-paper-plane" /></button>
+                  <!-- 无法自定义样式 -->
+                  <!-- <el-input v-model="subscribeInput" type="email" placeholder="Email" >
+                     <el-button slot="append"><i class="fa fa-paper-plane" /></el-button>
+                  </el-input> -->
+                  <input v-model="subscribeInput" type="email" placeholder="Email">
+                  <button @click="subscribe()"><i class="fa fa-paper-plane" /></button>
                 </form>
               </div>
-            </div>
-          </div>
+            </el-col>
+          </el-row>
         </div>
         <div class="footer-bottom">
-          <div class="row justify-content-center align-items-center">
-            <div class="col-lg-6 col-md-6 col-sm-12">
+          <el-row type="flex" justify="center" align="center">
+            <el-col :sm="24" :md="12" :lg="12">
               <p class="copyright-line">
                 Copyright &copy; 2021. CSO All rights reserved.
               </p>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12">
+            </el-col>
+            <el-col :sm="24" :md="12" :lg="12">
               <p class="privacy" />
-            </div>
-          </div>
+            </el-col>
+          </el-row>
         </div>
       </div>
     </footer>
@@ -80,7 +90,16 @@
 
 <script>
 export default {
-  name: 'Footer'
+  name: 'Footer',
+  data () {
+    return {
+      subscribeInput: ''
+    }
+  },
+  // 订阅按钮发起的事件，获取subscribeInput值
+  subscribe: () => {
+    console.log(111)
+  }
 }
 </script>
 
@@ -147,6 +166,18 @@ export default {
   color: #fff;
   font-size: 15px;
 }
+
+/* 是否为shodow root？ */
+/* .subscribe-form el-input {
+  background: #efc94c;
+  border-color: #efc94c;
+  margin-top: 30px;
+}
+
+.subscribe-form el-input::placeholder {
+  color: #fff;
+  font-size: 15px;
+} */
 
 .footer-up {
   padding: 80px 0;
