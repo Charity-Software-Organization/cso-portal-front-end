@@ -71,7 +71,7 @@
           </div>
         </div>
         <el-row :gutter="30">
-          <cause-card v-for="item in 3" :key="item" />
+          <cause-card v-for="item in 3" :key="`${item}-2`" />
         </el-row>
         <el-col :span="12" :offset="6" class="text-center">
           <cso-button plain>
@@ -88,7 +88,7 @@
         <div class="row">
           <div
             v-for="item in acheivementList"
-            :key="item"
+            :key="item.title"
             class="col-lg-3 col-md-3 col-sm-6"
           >
             <div class="single-counter-box">
@@ -136,7 +136,7 @@
           </div>
         </div>
         <div class="row">
-          <div v-for="item in 3" :key="item" class="col-lg-4 col-md-6">
+          <div v-for="item in 3" :key="`${item}-1`" class="col-lg-4 col-md-6">
             <div class="single-blog-item">
               <div class="blog-bg">
                 <img src="assets/img/blog-bg-1.jpg" alt="">
