@@ -1,6 +1,6 @@
 # cso-portal-front-end
 
-cso org website used by VUE.
+该项目属于组织的官网（Portal门户），用于展示组织的成员介绍，服务客户介绍，慈善捐赠情况等。
 
 该项目是 CSO 门户的前端部分，主要使用 VUE 进行开发。
 
