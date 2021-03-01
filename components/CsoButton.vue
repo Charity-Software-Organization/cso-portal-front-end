@@ -1,7 +1,9 @@
 <template>
   <button
     class="cso-button"
-    :class="[size ? 'cso-button--' + size : '']"
+    :class="[size ? 'cso-button--' + size : '',{
+      'is-plain':plain
+    }]"
     @click="handleClick"
   >
     <span v-if="$slots.default"><slot /></span>
@@ -16,6 +18,10 @@ export default {
       type: String,
       default: '',
       validator: value => ['', 'small', 'mini'].includes(value)
+    },
+    plain: {
+      type: Boolean,
+      default: false
     }
   },
   methods: {
@@ -46,6 +52,16 @@ export default {
   &:hover {
     background-color: $dark-blue;
     color: $white;
+  }
+
+  &.is-plain{
+    background-color: transparent;
+    color: $black-1;
+    border: 2px solid $yellow;
+    &:hover{
+      background-color: $yellow;
+      color: $white;
+    }
   }
 
   &--small {

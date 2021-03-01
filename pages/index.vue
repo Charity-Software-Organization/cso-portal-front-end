@@ -73,9 +73,11 @@
         <el-row :gutter="30">
           <cause-card v-for="item in 3" :key="item" />
         </el-row>
-        <div class="col-lg-12 text-center">
-          <a href="" class="line-btn mt-20 black">View All Cases</a>
-        </div>
+        <el-col :span="12" :offset="6" class="text-center">
+          <cso-button plain>
+            View All Cases
+          </cso-button>
+        </el-col>
       </div>
     </div>
     '
@@ -106,8 +108,12 @@
         <div class="row">
           <div class="col-lg-12 mar-bt-30 text-center">
             <div class="section-title">
-              <h6>You can join us</h6>
-              <h2>Our <b>Events</b></h2>
+              <h6 class="text-green text-sm">
+                You can join us
+              </h6>
+              <h2 class="margin-y-default text-lg">
+                Our <b class="text-yellow">Events</b>
+              </h2>
             </div>
           </div>
         </div>
@@ -120,8 +126,12 @@
         <div class="row">
           <div class="col-lg-12 mar-bt-30 text-center">
             <div class="section-title">
-              <h6>Everything Changes</h6>
-              <h2>Latest <b>Article</b></h2>
+              <h6 class="text-green text-sm">
+                Everything Changes
+              </h6>
+              <h2 class="margin-y-default text-lg">
+                Latest <b class="text-yellow">Article</b>
+              </h2>
             </div>
           </div>
         </div>

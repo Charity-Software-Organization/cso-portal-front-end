@@ -25,7 +25,8 @@
     "@nuxtjs/axios": "^5.12.5",
     "core-js": "^3.8.3",
     "element-ui": "^2.15.0",
-    "nuxt": "^2.15.2"
+    "nuxt": "^2.15.2",
+    "vue-count-to": "^1.0.13"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^5.0.0",
