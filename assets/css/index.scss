@@ -14,16 +14,8 @@
 
 // 全局样式
 html {
-  font-family:
-  "Quicksand",
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
+  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -70,7 +62,6 @@ h5 {
 a {
   text-decoration: none;
   cursor: pointer;
-  
 }
 
 p {
@@ -119,8 +110,6 @@ li {
   display: inline-block;
 }
 
-
-
 // 对齐方式
 @each $align in $aliginment {
   .text-#{$align} {
@@ -128,3 +117,51 @@ li {
   }
 }
 
+// 字体大小
+@each $fontsize, $fontSize  in $fontSizes {
+  .text-#{$fontsize}{
+    font-size: #{$fontSize}px;
+  }
+}
+
+// margin padding
+@each $gapKey, $gapValue  in $gaps {
+  .margin-#{$gapKey}{
+    margin: #{$gapValue}px;
+  }
+  .padding-#{$gapKey}{
+    padding: #{$gapValue}px;
+  }
+  // 水平方向
+  .margin-x-#{$gapKey}{
+    margin-left: #{$gapValue}px;
+    margin-right: #{$gapValue}px;
+  }
+  .padding-x-#{$gapKey}{
+    padding-left: #{$gapValue}px;
+    padding-right: #{$gapValue}px;
+  }
+  // 垂直方向
+  .margin-y-#{$gapKey}{
+    margin-top: #{$gapValue}px;
+    margin-bottom: #{$gapValue}px;
+  }
+  .padding-y-#{$gapKey}{
+    padding-top: #{$gapValue}px;
+    padding-bottom: #{$gapValue}px;
+  }
+  // 单个方向
+  @each $direction in $directions {
+    .margin-#{$direction}-#{$gapKey}{
+      margin-#{$direction}:#{$gapValue}px;
+    }
+    .padding-#{$direction}-#{$gapKey}{
+      padding-#{$direction}:#{$gapValue}px;
+    }
+  }
+}
+
+.container{
+  width:1200px;
+  margin: 0 auto;
+}

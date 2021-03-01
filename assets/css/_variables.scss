@@ -1,14 +1,45 @@
 // color
+$white: #fff;
+$light: #f6f6f6;
 $green: #00b965;
 $yellow: #ffd857;
-$white: #fff;
-$dark-blue:#25283a;
-$black-1:#191919;
+$dark-blue: #25283a;
+$black-1: #191919;
 $colors: (
+  "white": $white,
+  "light": $light,
   "green": $green,
   "yellow": $yellow,
-  "white": $white
 );
 
 // 对齐方式
-$aliginment:('left','center','right');
+$aliginment: (left, center, right);
+
+// 字体大小
+$fontSizes: (
+  "mini": 15,
+  "default": 16,
+  "sm": 17,
+  "md-1": 22,
+  "md": 24,
+  "lg": 50
+);
+
+// margin padding
+$gaps: (
+  "zero": 0,
+  "mini-0": 5,
+  "mini-1": 7,
+  "mini": 15,
+  "mini-2": 18,
+  "default": 20,
+  "sm": 25,
+  "md": 30,
+  "md-1": 35,
+  "md-2": 40,
+  "lg": 120,
+  "lg-1": 100,
+);
+
+// 方向
+$directions: (left, top, right, bottom);

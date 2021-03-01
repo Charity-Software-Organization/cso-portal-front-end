@@ -16,9 +16,12 @@
       <el-col :span="12">
         <div class="about-content">
           <div class="section-title">
-            <h6>{{ cardItem.tips }}</h6>
-            <h2>
-              {{ cardItem.title }} <b>{{ cardItem.b }}</b>
+            <h6 class="text-green text-sm">
+              {{ cardItem.tips }}
+            </h6>
+            <h2 class="text-lg margin-y-default">
+              {{ cardItem.title }}<br>
+              <b class="text-yellow">{{ cardItem.b }}</b>
             </h2>
           </div>
 
@@ -27,7 +30,9 @@
           </p>
 
           <!-- <a href="#" class="main-btn">Discover More</a> -->
-          <cso-button>Discover More</cso-button>
+          <cso-button style="margin: 20px 0;">
+            Discover More
+          </cso-button>
         </div>
       </el-col>
     </el-row>
@@ -92,5 +97,15 @@ export default {
   margin-top: 30px;
   -webkit-transition: transition all 300ms ease;
   transition: all 300ms ease;
+}
+h6{
+  text-transform:uppercase;
+  letter-spacing: 1px;
+}
+h2{
+  font-weight: 500;
+  line-height:60px;
+  letter-spacing:1px;
+  // margin:20px 0;
 }
 </style>

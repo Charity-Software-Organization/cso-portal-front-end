@@ -7,11 +7,13 @@
 -->
 <template>
   <el-col :span="8" :md="8" :sm="12" :xs="24">
-    <div class="single-feature-item">
+    <div class="single-feature-item padding-sm text-center">
       <div class="feature-icon">
         <i :class="cardItem.iconClass" />
       </div>
-      <h5>{{ cardItem.title }}</h5>
+      <h5 class="text-md margin-y-default">
+        {{ cardItem.title }}
+      </h5>
       <p>{{ cardItem.desc }}</p>
     </div>
   </el-col>
@@ -36,15 +38,11 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/css/_variables";
 .single-feature-item {
-  text-align: center;
-  padding: 25px;
   height: 300px;
   position: relative;
   z-index: 1;
   h5 {
-    font-size: 24px;
     font-weight: 600;
-    margin: 20px 0;
   }
   i {
     position: relative;

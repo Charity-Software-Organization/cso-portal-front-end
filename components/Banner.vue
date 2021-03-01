@@ -1,5 +1,5 @@
 <template>
-  <div class="banner-container" :style="{'background-image':bgImg}">
+  <div class="banner-container" :style="{'background-image':bgImg,height:height}">
     <div class="banner-content text-center">
       <slot />
     </div>
@@ -29,6 +29,6 @@ export default {
   background: repeat center center/100% 100%;
 }
 .banner-content {
-  max-width: 1140px;
+  max-width: 1200px;
 }
 </style>

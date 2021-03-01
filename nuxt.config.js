@@ -20,7 +20,7 @@ export default {
       { src: 'js/anijs-helper-scrollreveal-min.js' },
       { src: 'js/wow.min.js' },
       // 主入口
-      { src: 'js/main.js' },
+      { src: 'js/main.js' }
       // 其他依次删除
       // { src: 'js/jquery-3.5.1.min.js' },
       // { src: 'js/jquery.sticky.js' },
@@ -28,7 +28,7 @@ export default {
       // { src: 'js/jquery.waypoints.min.js' },
       // { src: 'js/jquery.counterup.min.js' },
       // { src: 'js/popper.min.js' },
-      
+
       // { src: 'js/owl.carousel.min.js' },
       // { src: 'js/isotope-3.0.6-min.js' },
       // { src: 'js/magnific-popup.min.js' },
@@ -39,11 +39,12 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     'element-ui/lib/theme-chalk/index.css',
-    
+
     // '~assets/css/barfiller.css',
     // '~assets/css/bootstrap.min.css',
-    // '~assets/css/flaticon.css',
-    
+    // icon
+    '~assets/css/flaticon.css',
+
     // '~assets/css/magnific-popup.css',
     // '~assets/css/owl.carousel.css',
     // '~assets/css/responsive.css',

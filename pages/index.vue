@@ -1,11 +1,23 @@
 <template>
   <div>
+    <banner height="100vh">
+      <h6 class="text-yellow text-sm">
+        DONATION IS THE BEST HUMINITY
+      </h6>
+      <h1 class="text-lg">
+        We stands for <br>
+        <span class="text-yellow">Greatest</span> Causes
+      </h1>
+      <cso-button style="margin-top: 20px">
+        View Causes
+      </cso-button>
+    </banner>
     <!-- About Area-->
-    <div class="about-area section-padding">
+    <div class="padding-y-lg">
       <big-card v-for="item in bigCardList" :key="item.desc" />
     </div>
     <!-- Feature Area -->
-    <div class="feature-area">
+    <div class="padding-bottom-lg-1">
       <div class="container">
         <el-row :gutter="30">
           <feature-card
@@ -17,16 +29,20 @@
       </div>
     </div>
     <!-- Service Area-->
-    <div class="service-area gray-bg section-padding">
+    <div class="bg-light padding-y-lg">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-12">
-            <div class="section-title text-center">
-              <h6>What We Do</h6>
-              <h2>We Can Save More <b>Life</b></h2>
+        <el-row>
+          <el-col :span="12" :offset="6">
+            <div class="text-center">
+              <h6 class="text-green text-sm">
+                What We Do
+              </h6>
+              <h2 class="margin-y-default text-lg">
+                We Can Save More <b class="text-yellow">Life</b>
+              </h2>
             </div>
-          </div>
-        </div>
+          </el-col>
+        </el-row>
         <el-row :gutter="30">
           <card
             v-for="(item, index) in cardList"
@@ -40,13 +56,17 @@
       </div>
     </div>
     <!-- Causes Area-->
-    <div class="causes-area section-padding">
+    <div class="padding-y-lg">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
             <div class="section-title">
-              <h6>We are fighting for</h6>
-              <h2>Recent <b>Causes</b></h2>
+              <h6 class="text-green text-sm">
+                We are fighting for
+              </h6>
+              <h2 class="text-lg">
+                Recent <b class="text-yellow">Causes</b>
+              </h2>
             </div>
           </div>
         </div>
@@ -57,13 +77,18 @@
           <a href="" class="line-btn mt-20 black">View All Cases</a>
         </div>
       </div>
-    </div>'
+    </div>
+    '
 
     <!-- Acheivement Area -->
     <div class="achievement-area">
       <div class="container">
         <div class="row">
-          <div v-for="(item) in acheivementList" :key="item" class="col-lg-3 col-md-3 col-sm-6">
+          <div
+            v-for="item in acheivementList"
+            :key="item"
+            class="col-lg-3 col-md-3 col-sm-6"
+          >
             <div class="single-counter-box">
               <p class="counter-number">
                 <span>{{ item.num }}</span>
@@ -79,10 +104,10 @@
     <div class="event-area section-padding">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 mar-bt-30 text-center ">
+          <div class="col-lg-12 mar-bt-30 text-center">
             <div class="section-title">
               <h6>You can join us</h6>
-              <h2>Our <b>Events</b> </h2>
+              <h2>Our <b>Events</b></h2>
             </div>
           </div>
         </div>
@@ -93,7 +118,7 @@
     <div class="blog-area gray-bg section-padding">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 mar-bt-30 text-center ">
+          <div class="col-lg-12 mar-bt-30 text-center">
             <div class="section-title">
               <h6>Everything Changes</h6>
               <h2>Latest <b>Article</b></h2>
@@ -101,7 +126,7 @@
           </div>
         </div>
         <div class="row">
-          <div v-for="item in 3 " :key="item" class="col-lg-4 col-md-6">
+          <div v-for="item in 3" :key="item" class="col-lg-4 col-md-6">
             <div class="single-blog-item">
               <div class="blog-bg">
                 <img src="assets/img/blog-bg-1.jpg" alt="">
@@ -110,7 +135,10 @@
                     Posted by <b>Admin</b> on Mar 30, 2020
                   </p>
                   <h5><a href="#">Awareness of Community Response to COVID-19</a></h5>
-                  <p>The provision of education relating to indigenous horticulture,psum dolor sit amet agriculture l</p>
+                  <p>
+                    The provision of education relating to indigenous horticulture,psum
+                    dolor sit amet agriculture l
+                  </p>
                   <a href="#" class="read-more">Read More</a>
                 </div>
               </div>
@@ -187,9 +215,23 @@ export default {
   },
   methods: {
     handleChangeActiveCardIndex (index) {
-      if (this.cardActiveIndex === index) { return }
+      if (this.cardActiveIndex === index) {
+        return
+      }
       this.cardActiveIndex = index
     }
   }
 }
 </script>
+
+<style lang="scss" scoped>
+h6 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+h2 {
+  letter-spacing: 1px;
+  line-height: 60px;
+  font-weight: 500;
+}
+</style>

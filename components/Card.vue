@@ -7,10 +7,14 @@
 -->
 <template>
   <el-col :md="6" :sm="12" :xs="24" :span="6">
-    <div class="single-service-item" :class="activeClass">
+    <div class="single-service-item padding-mini margin-top-md" :class="activeClass">
       <img :src="cardItem.imageSrc" alt="">
-      <h5>{{ cardItem.title }}</h5>
-      <p>{{ cardItem.desc }}</p>
+      <h5 class="text-md-1 margin-y-md-1">
+        {{ cardItem.title }}
+      </h5>
+      <p class="margin-y-md-2">
+        {{ cardItem.desc }}
+      </p>
     </div>
   </el-col>
 </template>
@@ -48,9 +52,7 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/css/_variables";
 .single-service-item {
-  padding: 15px;
   text-align: center;
-  margin-top: 30px;
   overflow: hidden;
   position: relative;
   -webkit-transition: all 0.4s ease;
@@ -71,9 +73,7 @@ export default {
   }
 
   h5 {
-    font-size: 22px;
     font-weight: 600;
-    margin: 35px 0;
     position: relative;
 
     &:after {
@@ -86,10 +86,6 @@ export default {
       margin-left: -35px;
       background: $green;
     }
-  }
-
-  p {
-    margin: 40px 0;
   }
 }
 </style>

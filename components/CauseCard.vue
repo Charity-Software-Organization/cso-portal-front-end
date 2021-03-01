@@ -1,7 +1,7 @@
 <template>
   <el-col :span="8" :md="8" :sm="12" :xs="24">
-    <div class="each-case-2">
-      <div class="case-2-img">
+    <div class="each-case padding-default margin-top-default margin-bottom-md-2">
+      <div class="case-img">
         <a href=""><img :src="cardItem.imageSrc" alt=""></a>
       </div>
       <div class="case-2-bar">
@@ -9,7 +9,7 @@
           Goal: <span>${{ cardItem.goal }}</span> | Raised:
           <span>$<span>{{ cardItem.raised }}</span></span>
         </p>
-        <div class="progress-bar-area">
+        <div class="margin-top-mini-1">
           <div class="single-bar-item">
             <el-progress
               :text-inside="true"
@@ -20,16 +20,20 @@
           </div>
         </div>
       </div>
-      <div class="case-2-texts bg-light-white">
+      <div class="case-texts bg-light-white">
         <img src="img/other/dot-ylo.png" alt="" class="bg-dots-case">
-        <span class="case-2-tag">{{ cardItem.tag }}</span>
-        <h3 class="slab">
+        <!-- <span class="case-tag">{{ cardItem.tag }}</span> -->
+        <el-tag type="info" size="normal" class="margin-y-default">
+          {{ cardItem.tag }}
+        </el-tag>
+
+        <h3 class="slab text-md text-mini-2">
           {{ cardItem.slab }}
         </h3>
-        <p>
+        <p class="margin-bottom-mini-0">
           {{ cardItem.desc }}
         </p>
-        <a href="" class="btn btn-green btn-md">Donate</a>
+        <a href="" class="btn bg-green text-white margin-y-sm">Donate</a>
       </div>
     </div>
   </el-col>
@@ -57,51 +61,23 @@ export default {
 
 <style lang="scss" scoped>
 @import "../assets/css/_variables";
-.each-case-2 {
+.each-case {
   border-radius: 6px;
-  padding: 20px;
-  margin-top: 20px;
-  margin-bottom: 40px;
   transition: all 0.3s ease-in-out;
   &:hover {
     box-shadow: 0 3px 16px -2px #d0cece;
   }
 }
 
-.case-2-img img {
+.case-img img {
   border-radius: 5px;
 }
 
-.case-2-texts {
-  h3 {
-    font-size: 24px;
-    margin: 18px 0;
-  }
-  p {
-    margin-bottom: 5px;
-  }
+.case-texts {
   .btn {
-    background: $green;
-    color: $white;
     padding: 11px 27px;
-    margin: 25px 0;
     letter-spacing: 1px;
+    border-radius: 0.25rem;
   }
-}
-
-span.case-2-tag {
-  border: 2px solid #ddd;
-  display: inline-block;
-  padding: 7px;
-  font-size: 15px;
-  text-transform: uppercase;
-  margin: 20px 0;
-  cursor: pointer;
-  font-weight: 600;
-  letter-spacing: 1px;
-}
-
-.progress-bar-area {
-  margin-top: 10px;
 }
 </style>
