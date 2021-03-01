@@ -1,11 +1,11 @@
 <template>
   <div class="about-page">
     <!-- About Area-->
-    <div class="about-area section-padding">
+    <div class="padding-y-lg">
       <big-card v-for="item in bigCardList" :key="item.desc" />
     </div>
     <!-- Feature Area -->
-    <div class="feature-area">
+    <div class="padding-bottom-lg-1">
       <div class="container">
         <el-row :gutter="30">
           <feature-card
@@ -18,7 +18,7 @@
     </div>
     <!--Programs Area -->
 
-    <div class="program-area gray-bg section-padding">
+    <div class="bg-light padding-y-lg">
       <div class="container">
         <el-row>
           <el-col :span="12" :offset="6" class="text-center">
@@ -43,7 +43,7 @@
     </div>
     <!-- Volunteer Area -->
 
-    <div class="team-area section-padding">
+    <div class="team-area padding-y-lg">
       <div class="container">
         <el-row>
           <el-col :span="12" :offset="6">

@@ -1,6 +1,6 @@
 <template>
   <el-col :span="8" :md="8" :sm="12" :xs="24">
-    <div class="single-team-member">
+    <div class="single-team-member margin-top-sm">
       <div class="team-member-bg">
         <div class="team-content">
           <div class="team-title">
@@ -46,6 +46,7 @@ export default {
 .single-team-member {
   position: relative;
   margin-top: 25px;
+  min-height: 450px;
   img {
     filter: grayscale(0.5);
   }
@@ -58,6 +59,12 @@ export default {
     text-align: center;
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
+  }
+  .team-title a {
+    color: $black-1;
+  }
+  .team-social li a {
+    color: $white;
   }
   &:hover {
     .team-social li a {
