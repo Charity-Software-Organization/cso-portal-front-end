@@ -52,9 +52,10 @@
         </ul>
       </el-col>
       <el-col :span="4">
-        <div class="donate-button">
+        <cso-button> 捐赠</cso-button>
+        <!-- <div class="donate-button">
           捐赠
-        </div>
+        </div> -->
       </el-col>
       <!-- 响应式 -->
       <!-- <el-col :lg="0" :sm="4">

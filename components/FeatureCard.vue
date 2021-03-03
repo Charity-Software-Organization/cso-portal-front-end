@@ -3,7 +3,7 @@
  * @Author: huxianc
  * @Date: 2021-02-25 21:06:29
  * @LastEditors: huxianc
- * @LastEditTime: 2021-02-25 22:12:12
+ * @LastEditTime: 2021-03-03 22:22:29
 -->
 <template>
   <el-col :span="8" :md="8" :sm="12" :xs="24">
@@ -50,9 +50,9 @@ export default {
       position: absolute;
       content: "";
       top: -2px;
-      left: -35px;
-      width: 70px;
-      height: 70px;
+      left: -2.1875rem;
+      width: 4.375rem;
+      height: 4.375rem;
       background: $yellow;
       border-radius: 50%;
       z-index: -1;
@@ -63,16 +63,16 @@ export default {
 }
 
 .feature-icon i:before {
-  font-size: 60px;
+  font-size: 3.75rem;
   font-weight: 400;
   color: $green;
 }
 
 .feature-icon:hover i:after {
-  width: 90px;
-  height: 90px;
+  width: 5.625rem;
+  height: 5.625rem;
   opacity: 0.8;
-  left: -18px;
+  left: -1.125rem;
   top: 0;
 }
 </style>

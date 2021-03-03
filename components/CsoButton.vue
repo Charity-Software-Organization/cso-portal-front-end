@@ -1,3 +1,10 @@
+<!--
+ * @Description:
+ * @Author: huxianc
+ * @Date: 2021-03-02 22:04:14
+ * @LastEditors: huxianc
+ * @LastEditTime: 2021-03-03 22:21:10
+-->
 <template>
   <button
     class="cso-button"
@@ -37,16 +44,16 @@ export default {
 .cso-button {
   display: inline-block;
   background-color: $yellow;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   letter-spacing: 1px;
-  padding: 14px 28px;
+  padding: 0.875rem 1.75rem;
   text-align: center;
   vertical-align: middle;
   text-transform: capitalize;
   color: $black-1;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   border: none;
   transition: 0.3s;
   &:hover {
@@ -65,13 +72,13 @@ export default {
   }
 
   &--small {
-    font-size: 14px;
-    padding: 12px 24px;
+    font-size: 0.875rem;
+    padding: 0.75rem 1.5rem;
   }
 
   &--mini {
-    font-size: 12px;
-    padding: 10px 20px;
+    font-size: 0.75rem;
+    padding: 0.625rem 1.25rem;
   }
 }
 </style>

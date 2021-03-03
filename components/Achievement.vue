@@ -3,7 +3,7 @@
  * @Author: huxianc
  * @Date: 2021-03-03 09:54:53
  * @LastEditors: huxianc
- * @LastEditTime: 2021-03-03 10:11:04
+ * @LastEditTime: 2021-03-03 22:16:09
 -->
 <template>
   <div class="achievement-area bg-green">
@@ -87,7 +87,7 @@ export default {
 
 <style lang="scss" scoped>
 .achievement-area {
-  height: 300px;
+  height: 18.75rem;
   background-size: cover;
   background-position: center;
   display: -webkit-box;
@@ -113,13 +113,22 @@ export default {
     &::before {
       position: absolute;
       content: "";
-      width: 40px;
+      width: 2.5rem;
       height: 3px;
-      top: -8px;
+      top: -0.5rem;
       left: 50%;
       background: #efc94c;
-      margin-left: -20px;
+      margin-left: -1.25rem;
     }
+  }
+}
+</style>
+
+<style lang="scss" scoped>
+@media (max-width: 768px) {
+  .achievement-area{
+    height: auto;
+    padding: 1.25rem 0;
   }
 }
 </style>

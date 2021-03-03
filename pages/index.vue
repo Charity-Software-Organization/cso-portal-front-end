@@ -85,10 +85,10 @@
     <achievement />
 
     <!--Events Area -->
-    <div class="event-area section-padding">
+    <div class="event-area padding-y-lg">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-12 mar-bt-30 text-center">
+        <el-row>
+          <el-col :span="12" :offset="6" class="text-center">
             <div class="section-title">
               <h6 class="text-green text-sm">
                 You can join us
@@ -97,13 +97,14 @@
                 Our <b class="text-yellow">Events</b>
               </h2>
             </div>
-          </div>
-        </div>
+          </el-col>
+        </el-row>
+        <event-card v-for="(item, index) in 4" :key="`${item}-event`" :index="index" />
       </div>
     </div>
 
     <!-- Blog Area-->
-    <div class="blog-area gray-bg section-padding">
+    <div class="blog-area padding-y-lg bg-light">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 mar-bt-30 text-center">

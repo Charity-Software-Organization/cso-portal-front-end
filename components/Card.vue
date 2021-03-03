@@ -3,7 +3,7 @@
  * @Author: huxianc
  * @Date: 2021-02-25 21:06:29
  * @LastEditors: huxianc
- * @LastEditTime: 2021-02-25 22:09:06
+ * @LastEditTime: 2021-03-03 22:23:28
 -->
 <template>
   <el-col :md="6" :sm="12" :xs="24" :span="6">
@@ -57,7 +57,7 @@ export default {
   position: relative;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
-  border-radius: 7px;
+  border-radius: 0.4375rem;
 
   &.active {
     color: $white;
@@ -79,11 +79,11 @@ export default {
     &:after {
       position: absolute;
       content: "";
-      width: 70px;
+      width: 4.375rem;
       height: 3px;
-      bottom: -21px;
+      bottom: -1.3125rem;
       left: 50%;
-      margin-left: -35px;
+      margin-left: -2.1875rem;
       background: $green;
     }
   }

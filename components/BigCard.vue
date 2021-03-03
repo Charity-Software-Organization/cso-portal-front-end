@@ -3,7 +3,7 @@
  * @Author: huxianc
  * @Date: 2021-02-25 21:06:29
  * @LastEditors: huxianc
- * @LastEditTime: 2021-02-25 22:05:34
+ * @LastEditTime: 2021-03-03 22:23:15
 -->
 <template>
   <div class="container">
@@ -61,7 +61,7 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/css/_variables";
 .about-left {
-  margin-right: 60px;
+  margin-right: 3.75rem;
   position: relative;
   &:before,
   &:after {
@@ -69,12 +69,12 @@ export default {
     content: "";
     width: 100%;
     height: 100%;
-    border-radius: 10px;
+    border-radius: 0.625rem;
   }
 
   &:before {
-    bottom: -20px;
-    right: 20px;
+    bottom: -1.25rem;
+    right: 1.25rem;
     background: $yellow;
     z-index: -1;
   }
@@ -94,7 +94,7 @@ export default {
 }
 
 .about-content {
-  margin-top: 30px;
+  margin-top: 1.875rem;
   -webkit-transition: transition all 300ms ease;
   transition: all 300ms ease;
 }
@@ -104,8 +104,7 @@ h6{
 }
 h2{
   font-weight: 500;
-  line-height:60px;
+  line-height:3.75rem;
   letter-spacing:1px;
-  // margin:20px 0;
 }
 </style>
