@@ -20,7 +20,13 @@
         >
           <div class="single-counter-box text-white">
             <div class="counter-number text-white text-lg margin-bottom-mini">
-              <span>{{ item.num }}</span>
+              <countTo
+                ref="count"
+                :start-val="0"
+                :end-val="item.num"
+                :duration="2000"
+                separator=","
+              />
             </div>
             <h6 class="text-sm padding-top-mini">
               {{ item.title }}
@@ -36,6 +42,7 @@
 export default {
   data () {
     return {
+      shouldStart: false,
       acheivementList: [
         { num: 324, title: 'Volunteers' },
         { num: 984, title: 'Campaign' },
@@ -43,13 +50,43 @@ export default {
         { num: 820, title: 'Awards' }
       ]
     }
+  },
+  mounted () {
+    if (process.browser) {
+      window.addEventListener('scroll', this.computedHeight)
+      this.$once('hook:beforeDestroy', () => {
+        window.removeEventListener('scroll', this.computedHeight)
+      })
+    }
+  },
+  methods: {
+    computedHeight () {
+      const rect = this.$el.getBoundingClientRect()
+      const topToBottom = rect.top - window.innerHeight + rect.height / 2 <= 0
+      const bottomToTop = -rect.top > rect.height / 2
+      if (topToBottom && !bottomToTop) {
+        if (this.shouldStart) {
+          this.start()
+        }
+        this.shouldStart = false
+      } else if (bottomToTop) {
+        this.shouldStart = true
+        this.start()
+      } else {
+        this.shouldStart = true
+      }
+    },
+    start () {
+      this.$refs.count.forEach((item) => {
+        item.start()
+      })
+    }
   }
 }
 </script>
 
 <style lang="scss" scoped>
 .achievement-area {
-  background: #00b965;
   height: 300px;
   background-size: cover;
   background-position: center;
@@ -70,7 +107,7 @@ export default {
   font-weight: 600;
   h6 {
     position: relative;
-    text-transform:uppercase;
+    text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 400;
     &::before {

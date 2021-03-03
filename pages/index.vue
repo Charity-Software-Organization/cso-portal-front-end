@@ -80,7 +80,6 @@
         </el-col>
       </div>
     </div>
-    '
 
     <!-- Acheivement Area -->
     <achievement />

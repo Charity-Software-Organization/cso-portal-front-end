@@ -10,9 +10,7 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' }
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     script: [
       // 动画库
       { src: 'js/anijs-min.js' },
@@ -59,7 +57,14 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '@/plugins/element-ui'
+    {
+      src: '@/plugins/element-ui',
+      ssr: true
+    },
+    {
+      src: '@/plugins/vue-count-to',
+      ssr: true
+    }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
