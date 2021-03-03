@@ -83,24 +83,7 @@
     '
 
     <!-- Acheivement Area -->
-    <div class="achievement-area">
-      <div class="container">
-        <div class="row">
-          <div
-            v-for="item in acheivementList"
-            :key="item.title"
-            class="col-lg-3 col-md-3 col-sm-6"
-          >
-            <div class="single-counter-box">
-              <p class="counter-number">
-                <span>{{ item.num }}</span>
-              </p>
-              <h6>{{ item.title }}</h6>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <achievement />
 
     <!--Events Area -->
     <div class="event-area section-padding">
@@ -214,12 +197,6 @@ export default {
           title: 'Charity for Cloths',
           desc: 'Pure Water dolor sit amet, consectetur adipisicing elit.'
         }
-      ],
-      acheivementList: [
-        { num: 324, title: 'Volunteers' },
-        { num: 984, title: 'Campaign' },
-        { num: 750, title: 'Donation' },
-        { num: 820, title: 'Awards' }
       ]
     }
   },
