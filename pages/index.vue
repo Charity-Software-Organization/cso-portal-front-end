@@ -118,26 +118,9 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div v-for="item in 3" :key="`${item}-1`" class="col-lg-4 col-md-6">
-            <div class="single-blog-item">
-              <div class="blog-bg">
-                <img src="assets/img/blog-bg-1.jpg" alt="">
-                <div class="blog-content">
-                  <p class="blog-meta">
-                    Posted by <b>Admin</b> on Mar 30, 2020
-                  </p>
-                  <h5><a href="#">Awareness of Community Response to COVID-19</a></h5>
-                  <p>
-                    The provision of education relating to indigenous horticulture,psum
-                    dolor sit amet agriculture l
-                  </p>
-                  <a href="#" class="read-more">Read More</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <el-row :gutter="20">
+          <article-card v-for="item in 3" :key="`${item}-1`" />
+        </el-row>
       </div>
     </div>
   </div>
