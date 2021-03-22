@@ -3,23 +3,26 @@
     <!-- 邮件、欢迎语、顶层分享 -->
 
     <el-row class="header-top-area">
-      <el-col :span="8">
+      <el-col :span="7">
         <a class="email-link" href="example@163.com">
           <i class="fa fa-envelope" />邮件联系我们
         </a>
       </el-col>
-      <el-col :span="8">
+      <el-col :span="7">
         <p class="welcome-message">
           欢迎你
         </p>
       </el-col>
-      <el-col :span="8">
+      <el-col :span="7">
         <div class="social-icon">
-          <a href=""><i class="lab la-facebook-f" /></a>
-          <a href=""><i class="lab la-instagram" /></a>
-          <a href=""><i class="lab la-twitter" /></a>
-          <a href=""><i class="la la-dribbble" /></a>
+          <a><i class="lab la-facebook-f" /></a>
+          <a><i class="lab la-instagram" /></a>
+          <a><i class="lab la-twitter" /></a>
+          <a><i class="la la-dribbble" /></a>
         </div>
+      </el-col>
+      <el-col class="close-button" :span="3">
+        <a @click="closeHeaderTop"><i class="fa fa-close" /></a>
       </el-col>
     </el-row>
 
@@ -52,7 +55,7 @@
         </ul>
       </el-col>
       <el-col :span="4">
-        <div class="donate-button">
+        <div class="donate-button" @click="donate">
           捐赠
         </div>
       </el-col>
@@ -63,13 +66,25 @@
         </div>
       </el-col> -->
     </el-row>
+    <hr>
   </header>
 </template>
 
 <script>
 export default {
   name: 'Header',
-  props: {}
+  props: {},
+  data () {
+    return {}
+  },
+  methods: {
+    closeHeaderTop () {
+      console.log('closeHeaderTop')
+    },
+    donate () {
+      console.log('donate')
+    }
+  }
 }
 </script>
 
@@ -78,6 +93,7 @@ export default {
   // 邮件、欢迎语、顶层分享
   .header-top-area {
     width: 100%;
+    height: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -105,14 +121,19 @@ export default {
     .social-icon {
       display: block;
       text-align: center;
-      a {
-        color: #fff;
-      }
+    }
+    .close-button {
+      cursor: pointer;
+    }
+    // 提升
+    a {
+      color: #fff;
     }
   }
   // logo、main-nav、donate-button
   .header-area {
     width: 100%;
+    height: 3rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -148,7 +169,7 @@ export default {
       font-weight: 500;
       letter-spacing: 1px;
       text-transform: capitalize;
-      padding: 14px 28px;
+      padding: 7px 28px;
       text-align: center;
       vertical-align: middle;
       cursor: pointer;

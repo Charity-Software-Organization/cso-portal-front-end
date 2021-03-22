@@ -9,7 +9,7 @@
             class="navbar-brand"
             href="#"
           ><img
-            src="assets/img/logo-white.png"
+            src="img/logo-white.png"
             alt=""
           ></a>
         </div>
