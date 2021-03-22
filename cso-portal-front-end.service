@@ -1,0 +1,7 @@
+[Unit]
+Description=CSO protal front end service used by Linux.
+[Service]
+WorkingDirectory=/cso-protal-front-end/
+ExecStart=/usr/bin/npm run build
+[Install]
+WantedBy=multi-user.target

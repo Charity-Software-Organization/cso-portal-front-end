@@ -58,6 +58,7 @@
         <div class="donate-button" @click="donate">
           捐赠
         </div>
+        -->
       </el-col>
       <!-- 响应式 -->
       <!-- <el-col :lg="0" :sm="4">

@@ -1,3 +1,10 @@
+<!--
+ * @Description:
+ * @Author: huxianc
+ * @Date: 2021-03-02 22:04:14
+ * @LastEditors: huxianc
+ * @LastEditTime: 2021-03-04 21:59:24
+-->
 <template>
   <!-- div.page 页 -->
   <div class="page">
@@ -7,6 +14,31 @@
     <el-backtop />
   </div>
 </template>
+
+<script>
+export default {
+  mounted () {
+    if (process.browser) {
+      this.computedRem()
+      window.addEventListener('resize', this.computedRem)
+    }
+  },
+  methods: {
+    computedRem () {
+      const docEl = document.documentElement
+      const width = document.body.clientWidth || document.documentElement.clientWidth
+
+      if (width > 992) {
+        docEl.style.fontSize = '16px'
+      } else if (width > 768) {
+        docEl.style.fontSize = '14px'
+      } else {
+        docEl.style.fontSize = '12px'
+      }
+    }
+  }
+}
+</script>
 
 <style lang="scss">
 .page {

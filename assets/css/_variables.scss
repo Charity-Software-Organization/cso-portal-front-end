@@ -10,6 +10,7 @@ $colors: (
   "light": $light,
   "green": $green,
   "yellow": $yellow,
+  "dark":$black-1
 );
 
 // 对齐方式
@@ -17,28 +18,28 @@ $aliginment: (left, center, right);
 
 // 字体大小
 $fontSizes: (
-  "mini": 15,
-  "default": 16,
-  "sm": 17,
-  "md-1": 22,
-  "md": 24,
-  "lg": 50
+  "mini": 0.9375, //15
+  "default": 1,//16
+  "sm": 1.0625,//17
+  "md-1": 1.375,//22
+  "md": 1.5,//24
+  "lg": 3.125, //50
 );
 
 // margin padding
 $gaps: (
   "zero": 0,
-  "mini-0": 5,
-  "mini-1": 7,
-  "mini": 15,
-  "mini-2": 18,
-  "default": 20,
-  "sm": 25,
-  "md": 30,
-  "md-1": 35,
-  "md-2": 40,
-  "lg": 120,
-  "lg-1": 100,
+  "mini-0": 0.3125, // 5
+  "mini-1":0.4375, // 7
+  "mini": 0.9375, //15
+  "mini-2": 1.125,//18
+  "default": 1.25,//20
+  "sm": 1.5625,//25
+  "md": 1.875, //30
+  "md-1": 2.1875,//35
+  "md-2": 2.5,//40
+  "lg": 7.5,//120
+  "lg-1": 6.25,//100
 );
 
 // 方向

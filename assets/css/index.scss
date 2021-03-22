@@ -120,48 +120,65 @@ li {
 // 字体大小
 @each $fontsize, $fontSize  in $fontSizes {
   .text-#{$fontsize}{
-    font-size: #{$fontSize}px;
+    font-size: #{$fontSize}rem;
   }
+}
+
+.text-bold{
+  font-weight: bold;
 }
 
 // margin padding
 @each $gapKey, $gapValue  in $gaps {
   .margin-#{$gapKey}{
-    margin: #{$gapValue}px;
+    margin: #{$gapValue}rem;
   }
   .padding-#{$gapKey}{
-    padding: #{$gapValue}px;
+    padding: #{$gapValue}rem;
   }
   // 水平方向
   .margin-x-#{$gapKey}{
-    margin-left: #{$gapValue}px;
-    margin-right: #{$gapValue}px;
+    margin-left: #{$gapValue}rem;
+    margin-right: #{$gapValue}rem;
   }
   .padding-x-#{$gapKey}{
-    padding-left: #{$gapValue}px;
-    padding-right: #{$gapValue}px;
+    padding-left: #{$gapValue}rem;
+    padding-right: #{$gapValue}rem;
   }
   // 垂直方向
   .margin-y-#{$gapKey}{
-    margin-top: #{$gapValue}px;
-    margin-bottom: #{$gapValue}px;
+    margin-top: #{$gapValue}rem;
+    margin-bottom: #{$gapValue}rem;
   }
   .padding-y-#{$gapKey}{
-    padding-top: #{$gapValue}px;
-    padding-bottom: #{$gapValue}px;
+    padding-top: #{$gapValue}rem;
+    padding-bottom: #{$gapValue}rem;
   }
   // 单个方向
   @each $direction in $directions {
     .margin-#{$direction}-#{$gapKey}{
-      margin-#{$direction}:#{$gapValue}px;
+      margin-#{$direction}:#{$gapValue}rem;
     }
     .padding-#{$direction}-#{$gapKey}{
-      padding-#{$direction}:#{$gapValue}px;
+      padding-#{$direction}:#{$gapValue}rem;
     }
   }
 }
 
 .container{
-  width:1200px;
+  width: 100%;
+  max-width:1200px;
   margin: 0 auto;
+}
+
+@media (max-width:992){
+  .container{
+    max-width:992px;
+  }
+}
+
+@media (max-width:768){
+  .container{
+    max-width:768px;
+  }
 }
