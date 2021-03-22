@@ -47,7 +47,7 @@ pages/index.vue 和 layouts/default.vue
 
 ```
     "@nuxt/content": "^1.11.1",  // nuxt内容管理
-    "@nuxtjs/axios": "^5.12.5",  // axios，http请求
+    "@nuxtjs/axios": "^5.12.5",  // axios, http请求
     "core-js": "^3.8.3",
     "element-ui": "^2.15.0",     // ElementUI
     "nuxt": "^2.14.12"           // nuxt核心
